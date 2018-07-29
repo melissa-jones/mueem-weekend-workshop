@@ -31,7 +31,7 @@
     --spacer-large: 80px;
     --transition-time: 0.3s;
   
-    --area-wide: 800px;
+    --area-wide: 1200px;
   
     /* font sizes */
     --font-size-site-title: 32px;
@@ -326,4 +326,30 @@ input[type="email"] {
         grid-template-columns: 48% 48%;
         justify-content: space-between;
     }
+}
+
+/* image gallery */
+.image-gallery ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.image-gallery li {
+    float: left;
+    margin: 10px;
+    max-width: 250;
+
+}
+
+.image-gallery a img {
+    filter: grayscale(70%);
+    box-shadow: 0px 1px 10px var(--strong-text-color);
+    transition: var(--transition-time);
+}
+.image-gallery a:hover img {
+    filter: unset;
+    transform: scale(1.05);
+
 }
